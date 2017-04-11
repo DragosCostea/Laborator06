@@ -2,6 +2,7 @@ package ro.pub.cs.systems.eim.lab06.ftpserverwelcomemessage.views;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,6 +22,7 @@ public class FTPServerWelcomeMessageActivity extends AppCompatActivity {
 
         @Override
         public void onClick(View view) {
+            Log.d("adfasdfs", "adfasdf");
             FTPServerCommunicationAsyncTask ftpServerCommunicationAsyncTask = new FTPServerCommunicationAsyncTask(welcomeMessageTextView);
             ftpServerCommunicationAsyncTask.execute(FTPServerAddressEditText.getText().toString());
         }
